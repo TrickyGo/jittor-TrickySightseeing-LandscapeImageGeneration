@@ -12,7 +12,7 @@ import sys
 import cv2
 import time
 
-from models import *
+from model_for_transfer import *
 from datasets import *
 
 
