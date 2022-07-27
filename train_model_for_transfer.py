@@ -15,7 +15,7 @@ import cv2
 import time
 
 from model_for_transfer import *
-from datasets import *
+from datasets_for_transfer import *
 
 from tensorboardX import SummaryWriter
 
