@@ -33,9 +33,16 @@ bash scripts/test.sh
 ## Part2: Part-level Style Transfer Model
 
 ### 为风格迁移寻找合适的参考图片（具有相同的标签组）
+首先需要分别为训练集和测试集执行：
 ```
-bash scripts/find_match.sh
+python check_semantics.py
 ```
+以分别生成val_semantics_list.data和training_semantics_list.data，包含了图片的标签组信息。
+然后执行：
+```
+python find_match.py
+```
+寻找合适的参考对应关系，保存在match_dict.data中。
 
 ### 训练（包含推理）
 单卡训练可运行以下命令：
@@ -49,4 +56,4 @@ bash scripts/train_model_for_transfer.sh
 ```
 bash scripts/transfer.sh
 ```
-即可load位于'results/saved_models/'中的预训练模型进行测试，并将测试结果保存至'results/'
+即可load位于'results/saved_models/'中的预训练模型进行风格迁移，并将测试结果保存至'results/'
