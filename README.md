@@ -3,7 +3,7 @@
 
 ## 简介
 
-本项目包含了TrickySightseeing小队的草图生成风景比赛的代码实现。
+本项目包含了TrickySightseeing小队的草图生成风景比赛的代码实现。 获第二届计图人工智能竞赛三等奖（Scene Image Generation Track），10,000 RMB 奖金。
 
 ## 安装 
 
